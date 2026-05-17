@@ -13,7 +13,9 @@ function Signup({ setToken }) {
     setError("");
 
     try {
-      const response = await fetch("http://localhost:5000/api/users/signup", {
+    const response = await fetch(
+  "https://projectbuilder-production-fc85.up.railway.app/api/users/signup",
+  {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
