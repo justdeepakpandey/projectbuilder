@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { LogOut, PlusCircle, Sparkles } from "lucide-react";
 import ProjectCard from "./ProjectCard";
 
-const API_URL = "http://localhost:5000/api/projects";
+const API_URL = "https://projectbuilder-production-fc85.up.railway.app/api/projects";
 
 function Dashboard({ setToken }) {
   const [skills, setSkills] = useState("");
